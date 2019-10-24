@@ -2,7 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const productRouter = require("./routes/productRoutes");
 const userRouter = require("./routes/userRoutes");
-
+const AppError = require("./utils/appError");
 const app = express();
 
 //1) Middleware
